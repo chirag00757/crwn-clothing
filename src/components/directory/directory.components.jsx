@@ -35,7 +35,7 @@ class Directory extends Component{
                 title:'men',
                 imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
                 size:'large',
-                id:1,
+                id:5,
                 linkUrl:''
             }]
         }
