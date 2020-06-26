@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch,Route } from 'react-router-dom';
+import { Switch,Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
 import './App.css';
@@ -54,7 +54,9 @@ class App extends Component{
   }
  
 }
-
+const mapStateToProps = user => ({
+  
+})
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
