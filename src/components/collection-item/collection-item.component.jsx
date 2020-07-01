@@ -26,10 +26,10 @@ const CollectionItem = ({item, addItem}) => {
 }
 
 
-const matchDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
     addItem: item => dispatch(addItem(item))
 })
 export default connect(
                         null,
-                        matchDispatchToProps)(CollectionItem);
+                        mapDispatchToProps)(CollectionItem);
 
