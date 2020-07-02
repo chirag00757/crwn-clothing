@@ -10,6 +10,7 @@ import SignInAndSignUpPage from "./pages/sign-in-sign-up/sign-in-sign-up.compone
 import { auth,createUserProfileDocument } from './firebase/firebase.utils';
 import {selectCurrentUser} from './redux/user/user.selectors';
 import  { createStructuredSelector} from 'reselect';
+import Checkout from './pages/checkout/checkout.component';
 
 class App extends Component{
   
@@ -58,6 +59,7 @@ class App extends Component{
                 ) : (
                   <SignInAndSignUpPage />
                 )}  />
+        <Route exact path='/checkout' component={Checkout} />
        </Switch>    
       </div>
     );
