@@ -1,17 +1,18 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CollectionPreviewContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30PX;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 `;
 
 export const TitleContainer = styled.h1`
-    font-size:28px;
-    margin-bottom: 25px;
+  font-size: 28px;
+  margin-bottom: 25px;
 `;
 
 export const PreviewContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
 `;
